@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Total Form Validation</title>
+	<link rel="stylesheet" href="fv.css" type="text/css" />
+	<!--[if IE]>
+	<style>
+		.item .tooltip .content{ display:none; opacity:1; }
+		.item .tooltip:hover .content{ display:block; }
+	</style>
+	<![endif]-->
+</head>
+<body>
+		<div id='wrap'>
+		<div class='options'>
+			<label>
+				<input type='checkbox' id='vfields' />
+				Vertical orientation
+			</label>
+			<label>
+				<input type='checkbox' id='alerts' />
+				Disable alerts
+			</label>
+		</div>
+		<h1 title='how forms should be done.'>Forms: validation, styling &amp; semantics</h1>
+		<section class='form'>
+			<form action="" method="post" novalidate>
+				<fieldset>
+					<div class="item">
+						<label>
+							<span>Destination</span>
+							<input data-validate-length-range="6" data-validate-words="2" name="name" placeholder="https://www.example.com/login" required="required" type="text" />		
+						</label>
+						<div class='tooltip help'>
+							<span>?</span>
+							<div class='content'>
+								<b></b>
+								<p>Url which needs to be entered</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="item">
+						<label>
+							<span>Drop down selection</span>
+							<select class="required" name="dropdown">
+								<option value="">-- none --</option>
+								<option value="get">GET</option>
+								<option value="post">POST</option>
+								<option value="put">PUT</option>
+								<option value="Patch">Patch</option>
+								<option value="Head">Head</option>
+								<option value="Options">Options</option>
+								<option value="Delete">Delete</option>
+							</select>
+						</label>
+						<div class='tooltip help'>
+							<span>?</span>
+							<div class='content'>
+								<b></b>
+								<p>Choose something or choose not. what shall it be?</p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<label>
+							<span>url</span>
+							<input name="url" placeholder="http://www.website.com" required="required" type="url" />
+						</label>
+					</div>
+			
+								</fieldset>
+				<fieldset>
+					
+					<input name="somethingHidden" required="required" type="text" style='display:none' />
+				</fieldset>
+				<button id='send' type='submit'>Submit</button>
+					<button id='button'>A button element</button>
+ 
+<input id="textid" type="text" value="A submit button" />
+<h2><a href="#" id="addScnt">+</a></h2>
+
+<div id="p_scents">
+    <p>
+        <label for="p_scnts"><input type="text" id="p_scnt" size="20" name="p_scnt" value="" placeholder="Input Value" /></label>
+    </p>
+</div>
+			</form>	
+		</section>
+	</div>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="multifield.js"></script>
+     -->
+     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+      <script src="validator.js"></script>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script src="DomManipulation.js"></script>
+</body>
+</html>

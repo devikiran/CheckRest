@@ -1,0 +1,16 @@
+{
+    "url": "http://api.rottentomatoes.com/api/public/v1.0/movies/770672122.json",
+    "verb": "GET",
+    "body": "",
+    "headers": [],
+    "BasicAuth": {
+        "": ""
+    },
+    "DigestAuth": {
+        "": ""
+    },
+    "parameters": [{
+        "key": "apikey",
+        "value": "w3fef7re4mzwam6zsq269eqy"
+    }]
+}
